@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="data:image/jpeg;base64,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" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/043/068/979/small/white-ripped-crumpled-paper-piece-png.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="https://t4.ftcdn.net/jpg/02/55/26/63/360_F_255266320_plc5wjJmfpqqKLh0WnJyLmjc6jFE9vfo.jpg" />
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
